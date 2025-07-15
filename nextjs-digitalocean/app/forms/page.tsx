@@ -20,7 +20,7 @@ export default function FormsPage() {
   useEffect(() => {
     const fetchForms = async () => {
       try {
-        const response = await fetch("http://localhost:3001/api/forms");
+        const response = await fetch("http://46.101.239.190:3001/api/forms");
         if (response.ok) {
           const data = await response.json();
           setForms(data.data);
@@ -46,7 +46,7 @@ export default function FormsPage() {
 
     setDeleteLoading(formId);
     try {
-      const response = await fetch(`http://localhost:3001/api/forms/${formId}`, {
+      const response = await fetch(`http://46.101.239.190:3001/api/forms/${formId}`, {
         method: "DELETE",
       });
 

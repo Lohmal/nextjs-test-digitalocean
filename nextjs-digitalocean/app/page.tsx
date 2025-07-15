@@ -25,7 +25,7 @@ export default function Home() {
     setSubmitMessage("");
 
     try {
-      const response = await fetch("/api/forms", {
+      const response = await fetch("http://46.101.239.190:3001/api/forms", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
